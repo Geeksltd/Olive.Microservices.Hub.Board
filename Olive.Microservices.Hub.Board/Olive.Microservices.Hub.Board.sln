@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{FCBF5E68-6649-4CD1-A0B9-2C3C2F121855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olive.Microservices.Hub.Board.Source.Net46", "Olive.Microservices.Hub.Board.Net46\Olive.Microservices.Hub.Board.Source.Net46.csproj", "{646C6C0B-B462-44D9-B8CA-A76BBBB5FE51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olive.Microservices.Hub.Board.Source", "Olive.Microservices.Hub.Board.Source\Olive.Microservices.Hub.Board.Source.csproj", "{B46B38B1-C4CB-47C6-BB9B-7870C4438492}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Common\Common.projitems*{646c6c0b-b462-44d9-b8ca-a76bbbb5fe51}*SharedItemsImports = 4
+		Common\Common.projitems*{b46b38b1-c4cb-47c6-bb9b-7870c4438492}*SharedItemsImports = 5
+		Common\Common.projitems*{fcbf5e68-6649-4cd1-a0b9-2c3c2f121855}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646C6C0B-B462-44D9-B8CA-A76BBBB5FE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646C6C0B-B462-44D9-B8CA-A76BBBB5FE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646C6C0B-B462-44D9-B8CA-A76BBBB5FE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646C6C0B-B462-44D9-B8CA-A76BBBB5FE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46B38B1-C4CB-47C6-BB9B-7870C4438492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46B38B1-C4CB-47C6-BB9B-7870C4438492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46B38B1-C4CB-47C6-BB9B-7870C4438492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46B38B1-C4CB-47C6-BB9B-7870C4438492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAB48187-B0D8-4ECE-8375-74149C6FB07A}
+	EndGlobalSection
+EndGlobal
