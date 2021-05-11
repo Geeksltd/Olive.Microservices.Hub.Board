@@ -10,6 +10,10 @@
         /// For relative Url to the current site use ~/my-url syntax.
         /// </summary>
         public string Url { get; set; }
+        /// <summary>
+        /// Type of the item 
+        /// </summary>
+        public string Type { get; set; }
 
         /// <summary>
         /// Name of the search result. This is mandatory.
