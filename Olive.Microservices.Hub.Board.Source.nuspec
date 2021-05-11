@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Olive.Microservices.Hub.BoardComponent.Source</id>
+    <version>1.0.107</version>
+    <title>Olive Board Components Source</title>
+    <authors>Geeks Ltd</authors>
+    <projectUrl>https://github.com/Geeksltd/Olive.Microservices.Hub.Board</projectUrl>
+    <iconUrl>http://licensing.msharp.co.uk/Images/OliveComponent.png</iconUrl>
+    <copyright>Copyright ©2021 Geeks Ltd - All rights reserved.</copyright>
+    <description>A distributed board components for Olive.</description>
+  </metadata>
+  <files>
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.Board.Source.dll" target="lib\netcoreapp2.1\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.Board.Source.pdb" target="lib\netcoreapp2.1\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.BoardComponent.Source.xml" target="lib\netcoreapp2.1\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.dll" target="lib\net46\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.pdb" target="lib\net46\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.xml" target="lib\net46\" />
+  </files>
+</package>

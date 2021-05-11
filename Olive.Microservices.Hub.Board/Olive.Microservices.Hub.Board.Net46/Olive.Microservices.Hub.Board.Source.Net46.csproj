@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.2.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.2\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MSharp.Framework, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b8f6365a003d114f, processorArchitecture=MSIL">
       <HintPath>..\packages\MSharp.Framework.3.0.214\lib\net45\MSharp.Framework.dll</HintPath>
     </Reference>
