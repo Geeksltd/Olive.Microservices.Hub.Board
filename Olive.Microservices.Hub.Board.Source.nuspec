@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Olive.Microservices.Hub.BoardComponent.Source</id>
-    <version>1.0.107</version>
+    <version>1.0.108</version>
     <title>Olive Board Components Source</title>
     <authors>Geeks Ltd</authors>
     <projectUrl>https://github.com/Geeksltd/Olive.Microservices.Hub.Board</projectUrl>
@@ -14,8 +14,8 @@
     <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.Board.Source.dll" target="lib\netcoreapp2.1\" />
     <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.Board.Source.pdb" target="lib\netcoreapp2.1\" />
     <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Source\bin\Debug\netcoreapp2.1\Olive.Microservices.Hub.BoardComponent.Source.xml" target="lib\netcoreapp2.1\" />
-    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.dll" target="lib\net46\" />
-    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.pdb" target="lib\net46\" />
-    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.xml" target="lib\net46\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.dll" target="lib\net472\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.pdb" target="lib\net472\" />
+    <file src="Olive.Microservices.Hub.Board\Olive.Microservices.Hub.Board.Net46\bin\Debug\Olive.Microservices.Hub.Board.Source.xml" target="lib\net472\" />
   </files>
 </package>
