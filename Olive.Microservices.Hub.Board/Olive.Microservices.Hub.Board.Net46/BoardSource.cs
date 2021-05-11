@@ -20,7 +20,12 @@ namespace Olive.Microservices.Hub.BoardComponent
             if (id.IsEmpty() || type.IsEmpty()) return;
 
             Process(context.User, id, type).GetAwaiter().GetResult();
-            var response = new JavaScriptSerializer().Serialize(Results);
+            var response = new JavaScriptSerializer().Serialize(new
+            {
+                Results,
+                AddabledItems = AddableItems
+            });
+
             context.Response.ContentType = "text/json";
             context.Response.Write(response);
         }
