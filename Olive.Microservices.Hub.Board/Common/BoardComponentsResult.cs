@@ -30,5 +30,9 @@
         /// </summary>
         public string IconUrl { get; set; }
 
+        /// <summary>
+        /// Background colour of the rendered component.
+        /// </summary>
+        public string Colour { get; set; }
     }
 }
