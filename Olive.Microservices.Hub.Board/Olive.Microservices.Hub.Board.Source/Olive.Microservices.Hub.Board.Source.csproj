@@ -11,7 +11,7 @@
     <Copyright>Copyright ©2021 Geeks Ltd - All rights reserved.</Copyright>
     <Description>A plugin for Olive Framework</Description>
     <RepositoryUrl>https://github.com/Geeksltd/Olive.Microservices.Hub.Board</RepositoryUrl>
-    <Version>1.0.106</Version>
+    <Version>1.2.112</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
