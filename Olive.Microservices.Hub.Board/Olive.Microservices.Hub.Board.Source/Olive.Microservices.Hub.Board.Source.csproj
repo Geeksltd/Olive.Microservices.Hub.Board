@@ -1,32 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <PackageId>Olive.Microservices.Hub.BoardComponent.Source</PackageId>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.1</TargetFramework>
+		<PackageId>Olive.Microservices.Hub.BoardComponent.Source</PackageId>
 
-    <Title>Olive GlobalSearch Source</Title>
-    <Authors>Geeks Ltd</Authors>
-    <PackageProjectUrl>https://github.com/Geeksltd/Olive</PackageProjectUrl>
-    <PackageIconUrl>http://licensing.msharp.co.uk/Images/OliveComponent.png</PackageIconUrl>
-    <Copyright>Copyright ©2021 Geeks Ltd - All rights reserved.</Copyright>
-    <Description>A plugin for Olive Framework</Description>
-    <RepositoryUrl>https://github.com/Geeksltd/Olive.Microservices.Hub.Board</RepositoryUrl>
-    <Version>1.2.112</Version>
-  </PropertyGroup>
+		<Title>Olive GlobalSearch Source</Title>
+		<Authors>Geeks Ltd</Authors>
+		<PackageProjectUrl>https://github.com/Geeksltd/Olive</PackageProjectUrl>
+		<PackageIconUrl>http://licensing.msharp.co.uk/Images/OliveComponent.png</PackageIconUrl>
+		<Copyright>Copyright ©2021 Geeks Ltd - All rights reserved.</Copyright>
+		<Description>A plugin for Olive Framework</Description>
+		<RepositoryUrl>https://github.com/Geeksltd/Olive.Microservices.Hub.Board</RepositoryUrl>
+		<Version>2.2.113</Version>
+		<LangVersion>preview</LangVersion>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Olive.Microservices.Hub.BoardComponent.Source.xml</DocumentationFile>
-    <WarningLevel>5</WarningLevel>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\netcoreapp2.0\Olive.Microservices.Hub.BoardComponent.Source.xml</DocumentationFile>
+		<WarningLevel>5</WarningLevel>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Olive" Version="2.1.180" />
-    <PackageReference Include="Olive.Entities" Version="2.1.137" />
-    <PackageReference Include="Olive.Web" Version="2.2.105" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.1" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Olive" Version="2.1.180" />
+		<PackageReference Include="Olive.Entities" Version="2.1.137" />
+		<PackageReference Include="Olive.Web" Version="2.2.105" />
+	</ItemGroup>
 
-  <Import Project="..\Common\Common.projitems" Label="Shared" />
+	<Import Project="..\Common\Common.projitems" Label="Shared" />
 
 </Project>

@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Olive.Microservices.Hub.Boa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Olive.Microservices.Hub.Board.Source", "Olive.Microservices.Hub.Board.Source\Olive.Microservices.Hub.Board.Source.csproj", "{B46B38B1-C4CB-47C6-BB9B-7870C4438492}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{89929B63-E785-42EA-8A24-4DB3C910AAE4}"
+	ProjectSection(SolutionItems) = preProject
+		..\Olive.Microservices.Hub.Board.Source.nuspec = ..\Olive.Microservices.Hub.Board.Source.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Common\Common.projitems*{646c6c0b-b462-44d9-b8ca-a76bbbb5fe51}*SharedItemsImports = 4

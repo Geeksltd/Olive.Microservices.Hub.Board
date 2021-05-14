@@ -9,8 +9,8 @@
     /// </summary>
     public abstract partial class BoardComponentsSource
     {
-        internal List<BoardComponentsResult> Results = new List<BoardComponentsResult>();
-        internal List<BoardComponentsAddableItem> AddableItems = new List<BoardComponentsAddableItem>();
+        internal List<BoardComponentsResult> Results = new();
+        internal List<BoardComponentsType> AddableItems = new();
 
         /// <summary>
         /// Adds an item to the results.
@@ -33,17 +33,18 @@
         /// <summary>
         /// Adds an item to the results.
         /// </summary>
-        protected void Add(BoardComponentsAddableItem result)
+        protected void Add(BoardComponentsType result)
         {
             if (result == null) return;
 
-            if (result.Url.IsEmpty())
-                throw new ArgumentException("Url cannot be empty in a search result.");
+            if (result.AddUrl.IsEmpty() && result.ManageUrl.IsEmpty())
+                throw new ArgumentException("At least one of AddUrl and ManagerUrl must be provided.");
 
             if (result.Name.IsEmpty())
                 throw new ArgumentException("Title cannot be empty in a search result.");
 
-            result.Url = FixUrl(result.Url);
+            result.AddUrl = FixUrl(result.AddUrl);
+            result.ManageUrl = FixUrl(result.ManageUrl);
             result.IconUrl = FixUrl(result.IconUrl);
             AddableItems.Add(result);
         }

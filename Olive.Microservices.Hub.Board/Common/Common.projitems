@@ -9,8 +9,8 @@
     <Import_RootNamespace>Common</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)BoardComponentsAddableItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoardComponentsResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoardComponentsSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BoardComponentsType.cs" />
   </ItemGroup>
 </Project>
