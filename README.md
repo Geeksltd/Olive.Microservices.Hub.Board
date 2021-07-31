@@ -18,29 +18,29 @@ Add the [Olive.Microservices.Hub.BoardComponent.Source](https://www.nuget.org/pa
 ### Step 2
 Add the following class to the Website project:
 
-```c#
-public class BoardComponentsSource : Olive.Microservices.Hub.BoardComponent.BoardComponentsSource
+```csharp
+using Olive.Microservices.Hub.BoardComponent;
+public class BoardComponentsSource : BoardComponentsSource
 {
      public override async Task Process(ClaimsPrincipal user, string id, string type)
      {
          
-         if (type == "Project"){
-			 // TODO: Process the id and type and add result items.
-			 
-			 foreach (var something in await SomeThings...())
-			 {
-				Add(new Olive.Microservices.Hub.BoardComponent.BoardComponentsResult { Url = "...", Name = "...", Body = "...", IconUrl = "..." });
-			 }        
-		 }        
-		 else if (type == "Person") { 
-		 	 // TODO: Process the id and type and add result items.
-			 
-			 foreach (var something in await SomeThings...())
-			 {
-				Add(new Olive.Microservices.Hub.BoardComponent.BoardComponentsResult { Url = "...", Name = "...", Body = "...", IconUrl = "..." });
-			 }  
-		 }		 
-         
+         if (type == "Project")
+	 {
+	      // TODO: Process the id and type and add result items.
+	      
+	      foreach (var something in await SomeThings...())	      
+	     	  Add(new BoardComponentsResult { Url = "...", Name = "...", Body = "...", IconUrl = "..." });	             
+	 }        
+	 else if (type == "Person") 
+	 { 
+	     // TODO: Process the id and type and add result items.
+	     
+	     foreach (var something in await SomeThings...())
+	     {
+	          Add(new BoardComponentsResult { Url = "...", Name = "...", Body = "...", IconUrl = "..." });
+	     }  
+	 }
          
          await AddableItem(user, id, type);
      }
