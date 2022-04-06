@@ -1,7 +1,7 @@
 ﻿namespace Olive.Microservices.Hub.BoardComponent
 {
     /// <summary>
-    /// Represents a single item that is displayed to the user.
+    /// Represents s widget that is displayed to the user.
     /// </summary>
     public class BoardWidget
     {
