@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Olive;
     /// <summary>
     /// The base class for a custom application-specific source provider.
     /// </summary>
