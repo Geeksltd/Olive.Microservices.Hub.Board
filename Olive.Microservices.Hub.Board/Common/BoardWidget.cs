@@ -26,10 +26,12 @@
         /// colour of the widget
         /// </summary>
         public string Colour { get; set; }
+        
         /// <summary>
         /// Permissions for acceess management
         /// </summary>
         public string Permissions { get; set; }
+        
         /// <summary>
         /// Service of the component
         /// </summary>
