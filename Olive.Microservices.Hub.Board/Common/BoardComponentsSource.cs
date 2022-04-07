@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
     /// <summary>
     /// The base class for a custom application-specific source provider.
     /// </summary>
@@ -11,6 +10,7 @@
     {
         internal List<BoardComponentsResult> Results = new();
         internal List<BoardComponentsType> AddableItems = new();
+        internal List<BoardWidget> Widgets = new();
 
         /// <summary>
         /// Adds an item to the results.
@@ -54,7 +54,20 @@
             if (url.OrEmpty().StartsWith("~/")) return MakeAbsolute(url.TrimStart('~'));
             else return url;
         }
+        protected void Add(BoardWidget result)
+        {
+            if (result == null) return;
 
+            if (result.AddUrl.IsEmpty() && result.ManageUrl.IsEmpty())
+                throw new ArgumentException("At least one of AddUrl and ManagerUrl must be provided.");
+
+            if (result.Name.IsEmpty())
+                throw new ArgumentException("Title cannot be empty in a search result.");
+
+            result.AddUrl = FixUrl(result.AddUrl);
+            result.ManageUrl = FixUrl(result.ManageUrl);
+            Widgets.Add(result);
+        }
         /// <summary>
         /// Adds an item to the results.
         /// <paramref name="url">For relative Url to the current site use ~/my-url syntax.</paramref>
